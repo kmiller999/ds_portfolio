@@ -13,11 +13,26 @@ about:
     - icon: github
       text: Github
       href: https://github.com/kmiller999
-
 ---
+
+### About Me
 
 I am an entry-level data analyst with a diverse skill set and expertise cultivated through graduate-level studies in neuroscience and data analytics.
 
 My most recent master’s in data analytics has further solidified my foundation in statistical expertise, particularly with advanced machine learning models. I am actively enhancing my versatility as a data analyst by applying these techniques—including Clustering, Deep Learning, Dimensionality Reduction, and Natural Language Processing (NLP)—to answer novel research questions.
 
 This approach, combined with my background in academic research, enables me to approach data analytics with a methodical, research-oriented mindset, focusing on deriving novel insights.
+
+### Education
+
+#### MS Data Analytics 
+
+Western Governors University
+
+#### MA Psychology
+
+University of Nebraska-Lincoln
+
+#### BS Psychology
+
+Emporia State University

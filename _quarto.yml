@@ -3,10 +3,11 @@ project:
   output-dir: docs
 
 website:
-  title: "portfolio"
+  title: "Kevin Miller"
   navbar:
     right:
       - about.qmd
+      - index.qmd
       - icon: github
         href: https://github.com/kmiller999
       - icon: linkedin
