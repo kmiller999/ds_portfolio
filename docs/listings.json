@@ -6,21 +6,5 @@
       "/posts/welcome/index.html",
       "/posts/capstone_report/code/capstone_report.html"
     ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
-      "/posts/capstone_report/code/capstone_report.html"
-    ]
-  },
-  {
-    "listing": "/index_orig.html",
-    "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
-      "/posts/capstone_report/code/capstone_report.html"
-    ]
   }
 ]
