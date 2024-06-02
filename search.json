@@ -1,17 +1,24 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Kevin Miller",
     "section": "",
     "text": "Email\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \n\nAbout Me\nI am an entry-level data analyst with a diverse skill set and expertise cultivated through graduate-level studies in neuroscience and data analytics.\nMy most recent master’s in data analytics has further solidified my foundation in statistical expertise, particularly with advanced machine learning models. I am actively enhancing my versatility as a data analyst by applying these techniques—including Clustering, Deep Learning, Dimensionality Reduction, and Natural Language Processing (NLP)—to answer novel research questions.\nThis approach, combined with my background in academic research, enables me to approach data analytics with a methodical, research-oriented mindset, focusing on deriving novel insights. For an in-depth view of my expertise and skills, please check out my expanding Projects section.\n\n\n\n\n\n\n\nEducation\n\nMS Data Analytics\nWestern Governors University | May 2024\n\n\nMA Psychology\nUniversity of Nebraska-Lincoln | August 2023\n\n\nBS Psychology\nEmporia State University | May 2021\n\n\n\n\nSkills and Interests\n\nRegression: Linear and Logistic Regression\nEnsemble Models: Decision Trees and Random Forest Models\nDimensionality Reduction: LDA, PCA\nClustering: K-Means and Hierarchical Clustering\nNatural Language Processing (NLP): Sentiment Analysis and Topic Modeling\nDeep Learning: Convolutional and Recurrent Neural Networks\n\n\n\n\n\nWork Experience\n\n\n\nGraduate Research Assistant\n\n\n\n2021-2023\n\n\n\nDepartment of Psychology, University of Nebraska-Lincoln\n\nApplied advanced statistical and programming techniques to analyze and report insights from multiple magnetic resonance imaging (MRI) studies\nCollaborated to streamline brain imaging and behavioral data analysis pipelines for improved efficiency and usability of data\n\n\n\n\nAcademic Tutor - Psychology\n\n\n\n2020-2021\n\n\n\nACES, Emporia State University\n\nAssisted students from diverse academic backgrounds in fostering greater conceptual understandings of course content and objectives\nEmpowered students to develop effective study habits and use their strengths to succeed in psychology courses"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJun 1, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMay 29, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\n  \n\n\n\n\nChi-Square and Random Forest Regression with Data Science Jobs Dataset\n\n\n\n\n\n\n\nPython\n\n\nDescriptive Analysis\n\n\nRandom Forest\n\n\n\n\nDo entry-level employees stand a chance in data science? Stay tuned to find out.\n\n\n\n\n\n\nMay 7, 2024\n\n\nKevin B. Miller\n\n\n\n\n\n\nNo matching items"
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
   },
   {
     "objectID": "posts/capstone_report/code/capstone_report.html",
@@ -70,23 +77,9 @@
     "text": "References\n\n\nai-jobs.net. (2024). Get a full dataset of global AI, ML, Data Salaries. https://ai-jobs.net/salaries/download/\n\n\nBewick, V., Cheek, L., & Ball, J. (2003). Statistics review 8: Qualitative data - tests of association. Critical Care, 8(1), 46. https://doi.org/10.1186/cc2428\n\n\nBrownlee, J. (2020a). Train-test split for evaluating machine learning algorithms. https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/\n\n\nBrownlee, J. (2020b). Why one-hot encode data in machine learning? https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/\n\n\nDavenport, T. H., & Patil, D. J. (2012). Data scientist: The sexiest job of the 21st century. Harvard Business Review. https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century\n\n\nDavenport, T. H., & Patil, D. J. (2022). Is data scientist still the sexiest job of the 21st century? Harvard Business Review. https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century\n\n\nDeori, T. (2023). Demystifying Machine Learning Challenges: Outliers. https://levelup.gitconnected.com/demystifying-machine-learning-challenges-outliers-34aa4f45a1b9\n\n\nEllis, C. (2022). Hyperparameter tuning in random forests. https://crunchingthedata.com/hyperparameter-tuning-in-random-forests/\n\n\nH2O.ai. (2024). Distributed random forest (DRF)  H2O 3.46.0.1 documentation. https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/drf.html\n\n\nJafari, M., & Ansari-Pour, N. (2019). Why, when and how to adjust your p values? Cell Journal (Yakhteh), 20(4), 604–607. https://doi.org/10.22074/cellj.2019.5992\n\n\nNeuhof, M. (2018). Chi-square (and post-hoc) tests in Python. https://neuhofmo.github.io/chi-square-and-post-hoc-in-python/\n\n\nRavi, R. (2022). One-Hot Encoding is making your Tree-Based Ensembles worse, here’s why? https://towardsdatascience.com/one-hot-encoding-is-making-your-tree-based-ensembles-worse-heres-why-d64b282b5769\n\n\nRosidi, N. (2023). Navigating data science job titles: Data analyst vs. Data scientist vs. Data engineer. https://www.kdnuggets.com/navigating-data-science-job-titles-data-analyst-vs-data-scientist-vs-data-engineer\n\n\nSelvaraj, N. (2022). Unable to land a data science job? Here’s why. https://www.kdnuggets.com/unable-to-land-a-data-science-job-heres-why\n\n\nSimmons, L. (2023). How to become a data scientist. https://www.computerscience.org/careers/data-science/how-to-become/\n\n\nU.S. Bureau of Labor Statistics. (2024). Data Scientists : Occupational Outlook Handbook: : U.S. Bureau of Labor Statistics. https://www.bls.gov/ooh/math/data-scientists.htm\n\n\nVisualizing TensorFlow Decision Forest Trees with dtreeviz. (2024). https://www.tensorflow.org/decision_forests/tutorials/dtreeviz_colab\n\n\nZangari, M. (n.d.). Jobs and Salaries in Data field 2024."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Portfolio",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
     "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJun 1, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMay 29, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\n  \n\n\n\n\nChi-Square and Random Forest Regression with Data Science Jobs Dataset\n\n\n\n\n\n\n\nPython\n\n\nDescriptive Analysis\n\n\nRandom Forest\n\n\n\n\nDo entry-level employees stand a chance in data science? Stay tuned to find out.\n\n\n\n\n\n\nMay 7, 2024\n\n\nKevin B. Miller\n\n\n\n\n\n\nNo matching items"
   }
