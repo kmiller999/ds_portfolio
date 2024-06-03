@@ -13,12 +13,13 @@ website:
       - text: Resume
         href: resume.qmd
     right:
+      - icon: envelope
+        href: mailto:kevinmiller1218@gmail.com
       - icon: github
         href: https://github.com/kmiller999
       - icon: linkedin
         href: https://www.linkedin.com/in/kevin-miller-375031204/
-      - icon: envelope
-        href: mailto:kevinmiller1218@gmail.com
+
 format:
   html:
     theme: darkly

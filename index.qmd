@@ -8,12 +8,12 @@ about:
     - icon: envelope
       text: Email
       href: mailto:kevinmiller1218@gmail.com
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/kevin-miller-375031204/
     - icon: github
       text: Github
       href: https://github.com/kmiller999
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/kevin-miller-375031204/
 ---
 
 ::: {#bio}
