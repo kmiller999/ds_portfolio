@@ -23,7 +23,7 @@ I am an entry-level data analyst with a diverse skill set and expertise cultivat
 
 My most recent master’s in data analytics has further solidified my foundation in statistical expertise, particularly with advanced machine learning models. I am actively enhancing my versatility as a data analyst by applying these techniques—including Clustering, Deep Learning, Dimensionality Reduction, and Natural Language Processing (NLP)—to answer novel research questions.
 
-This approach, combined with my background in academic research, enables me to approach data analytics with a methodical, research-oriented mindset, focusing on deriving novel insights. For an in-depth view of my expertise and skills, please check out my expanding Projects section. 
+This approach, combined with my background in academic research, enables me to approach data analytics with a methodical, research-oriented mindset, focusing on deriving novel insights. For applications of my expertise and skills, please check out my expanding [Projects](projects.html) section. 
 :::
 
 ::: columns
@@ -32,15 +32,36 @@ This approach, combined with my background in academic research, enables me to a
 
 #### MS Data Analytics
 
-Western Governors University \| May 2024
+::: columns
+::: {.column width="70%"}
+Western Governors University
+:::
+::: {.column width="30%"}
+05/2024
+:::
+:::
 
 #### MA Psychology
 
-University of Nebraska-Lincoln \| August 2023
+::: columns 
+::: {.column width="70%"}
+University of Nebraska-Lincoln
+:::
+::: {.column width="30%"}
+08/2023
+:::
+:::
 
 #### BS Psychology
 
-Emporia State University \| May 2021
+::: columns 
+::: {.column width="70%"}
+Emporia State University 
+:::
+::: {.column width="30%"}
+05/2021
+:::
+:::
 :::
 
 ::: {.column width="50%"}
