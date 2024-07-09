@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kmiller999.github.io/ds_portfolio/index.html</loc>
-    <lastmod>2024-06-03T15:13:16.703Z</lastmod>
+    <lastmod>2024-07-09T18:26:45.063Z</lastmod>
   </url>
   <url>
-    <loc>https://kmiller999.github.io/ds_portfolio/posts/capstone_report/code/capstone_report.html</loc>
-    <lastmod>2024-06-03T15:13:16.166Z</lastmod>
+    <loc>https://kmiller999.github.io/ds_portfolio/posts/web_scraping/sql_subgenre_cleaning.html</loc>
+    <lastmod>2024-07-09T18:26:44.536Z</lastmod>
   </url>
   <url>
     <loc>https://kmiller999.github.io/ds_portfolio/resume.html</loc>
-    <lastmod>2024-06-03T15:13:14.175Z</lastmod>
+    <lastmod>2024-07-09T18:26:37.796Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kmiller999.github.io/ds_portfolio/posts/web_scraping/subgenre_pairings.html</loc>
+    <lastmod>2024-07-09T18:26:42.337Z</lastmod>
   </url>
   <url>
     <loc>https://kmiller999.github.io/ds_portfolio/projects.html</loc>
-    <lastmod>2024-06-03T15:13:16.446Z</lastmod>
+    <lastmod>2024-07-09T18:26:44.806Z</lastmod>
   </url>
 </urlset>
