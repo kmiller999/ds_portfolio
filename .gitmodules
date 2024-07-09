@@ -1,6 +1,3 @@
 [submodule "posts/capstone_report"]
 	path = posts/capstone_report
 	url = https://github.com/kmiller999/capstone_report.git
-[submodule "posts/web_scraping"]
-	path = posts/web_scraping
-	url = https://github.com/kmiller999/metal_subgenre_pairings
