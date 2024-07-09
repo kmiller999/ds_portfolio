@@ -11,7 +11,7 @@
     "href": "posts/capstone_report/code/capstone_report.html",
     "title": "Chi-Square and Random Forest Regression with Data Science Jobs Dataset",
     "section": "",
-    "text": "This work represents a finalized Capstone Report for my Master’s of Science in Data Analytics from Western Governors University (WGU). To comply with WGU’s academic integrity guidelines, the present document was not submitted as part of my Capstone. Rather, this report represents an extension of the project that showcases my work without making my submitted materials publicly available."
+    "text": "Author: {{ page.Params.author }} Date Published: {{ page.Params.date }} Code Repository: GitHub\nThis work represents a finalized Capstone Report for my Master’s of Science in Data Analytics from Western Governors University (WGU). To comply with WGU’s academic integrity guidelines, the present document was not submitted as part of my Capstone. Rather, this report represents an extension of the project that showcases my work without making my submitted materials publicly available."
   },
   {
     "objectID": "posts/capstone_report/code/capstone_report.html#abstract",
