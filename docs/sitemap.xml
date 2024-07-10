@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kmiller999.github.io/ds_portfolio/index.html</loc>
-    <lastmod>2024-07-10T14:59:35.908Z</lastmod>
+    <lastmod>2024-07-09T18:01:46.066Z</lastmod>
   </url>
   <url>
     <loc>https://kmiller999.github.io/ds_portfolio/posts/capstone_report/code/capstone_report.html</loc>
-    <lastmod>2024-07-10T14:59:35.245Z</lastmod>
+    <lastmod>2024-07-09T18:43:54.729Z</lastmod>
   </url>
   <url>
-    <loc>https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/sql_subgenre_cleaning.html</loc>
-    <lastmod>2024-07-10T14:59:32.847Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kmiller999.github.io/ds_portfolio/resume.html</loc>
-    <lastmod>2024-07-10T14:59:30.970Z</lastmod>
+    <loc>https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/scraper.html</loc>
+    <lastmod>2024-07-10T15:46:22.380Z</lastmod>
   </url>
   <url>
     <loc>https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/subgenre_pairings.html</loc>
-    <lastmod>2024-07-10T14:59:31.834Z</lastmod>
+    <lastmod>2024-07-09T19:46:19.124Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kmiller999.github.io/ds_portfolio/resume.html</loc>
+    <lastmod>2024-07-09T18:01:46.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/sql_subgenre_cleaning.html</loc>
+    <lastmod>2024-07-09T19:46:19.124Z</lastmod>
   </url>
   <url>
     <loc>https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/tableau_dash.html</loc>
-    <lastmod>2024-07-10T14:59:33.078Z</lastmod>
+    <lastmod>2024-07-10T14:56:38.754Z</lastmod>
   </url>
   <url>
     <loc>https://kmiller999.github.io/ds_portfolio/projects.html</loc>
-    <lastmod>2024-07-10T14:59:35.650Z</lastmod>
+    <lastmod>2024-07-09T18:01:46.067Z</lastmod>
   </url>
 </urlset>
