@@ -65,23 +65,40 @@ Emporia State University
 :::
 
 ::: {.column width="50%"}
+### Programming Languages
+
+#### Python ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Python))
+Pandas, Numpy, Scikit-learn, statsmodels
+
+#### R ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=R))
+tidyverse, afex
+
+#### SQL ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=SQL))
+PostgreSQL, SQLite
+
+#### Linux
+Terminal navigation, script and batch job deployment
+
+:::
+:::
+
+
 ### Skills and Interests
 
-For the sake of brevity, I only included topics I have a project example for or that I am highly experienced with. 
+For sake of brevity, I only included topics with a project example or that I am highly experienced with. 
 
--   [**Inferential Statistical Modeling**]{.underline}: bivariate or multivariate ANOVA and Regression (Linear and Logistic)
+-   [**Inferential Statistical Modeling**]{.underline}: bivariate and multivariate ANOVA and Regression
 
--   [**Tree-Based Models**]{.underline}: Decision Trees and Random Forest Models ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Random%20Forest))
+-   [**Tree-Based Models**]{.underline}: Decision Trees and Random Forest Models ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Random%20Forest))
 
 -   [**Dimensionality Reduction**]{.underline}: Principal Component Analysis (PCA)
 
--   [**Web Scraping**]{.underline}: BeautifulSoup and Selenium in Python ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Web%20Scraping))
+-   [**Web Scraping**]{.underline}: BeautifulSoup and Selenium in Python ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Web%20Scraping))
 
--   [**Market Basket Analysis**]{.underline}: Support, Confidence, and Lift ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Market%20Basket%20Analysis))
+-   [**Market Basket Analysis**]{.underline}: Support, Confidence, and Lift ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Market%20Basket%20Analysis))
 
--   [**Data Visualization**]{.underline}: Tableau dashboards ([Project Examples](https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/tableau_dash.html)), Matplotlib and Seaborn in Python ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Python)), and GGplot2 in R ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=R))
-:::
-:::
+-   [**Data Visualization**]{.underline}: Tableau dashboards ([Examples](https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/tableau_dash.html)), Matplotlib and Seaborn in Python ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Python)), and GGplot2 in R ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=R))
+
 
 ### Experience
 
