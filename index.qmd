@@ -67,21 +67,23 @@ Emporia State University
 ::: {.column width="50%"}
 ### Skills and Interests
 
--   [**Regression**]{.underline}: Linear and Logistic Regression
+For the sake of brevity, I only included topics I have a project example for or that I am highly experienced with. 
 
--   [**Ensemble Models**]{.underline}: Decision Trees and Random Forest Models
+-   [**Inferential Statistical Modeling**]{.underline}: bivariate or multivariate ANOVA and Regression (Linear and Logistic)
 
--   [**Dimensionality Reduction**]{.underline}: LDA, PCA
+-   [**Tree-Based Models**]{.underline}: Decision Trees and Random Forest Models ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Random%20Forest))
 
--   [**Clustering**]{.underline}: K-Means and Hierarchical Clustering
+-   [**Dimensionality Reduction**]{.underline}: Principal Component Analysis (PCA)
 
--   [**Natural Language Processing (NLP)**]{.underline}: Sentiment Analysis and Topic Modeling
+-   [**Web Scraping**]{.underline}: BeautifulSoup and Selenium in Python ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Web%20Scraping))
 
--   [**Deep Learning**]{.underline}: Convolutional and Recurrent Neural Networks
+-   [**Market Basket Analysis**]{.underline}: Support, Confidence, and Lift ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Market%20Basket%20Analysis))
+
+-   [**Data Visualization**]{.underline}: Tableau dashboards ([Project Examples](https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/tableau_dash.html)), Matplotlib and Seaborn in Python ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Python)), and GGplot2 in R ([Project Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=R))
 :::
 :::
 
-### Work Experience
+### Experience
 
 ::: columns
 ::: {.column width="85%"}
@@ -100,7 +102,7 @@ Emporia State University
 
 ::: columns
 ::: {.column width="85%"}
-#### Academic Tutor - Psychology
+#### Undergraduate Research Assistant
 :::
 
 ::: {.column width="15%"}
@@ -108,7 +110,7 @@ Emporia State University
 :::
 :::
 
-**ACES, Emporia State University**
+**Department of Psychology, Emporia State University**
 
--   Assisted students from diverse academic backgrounds in fostering greater conceptual understandings of course content and objectives
--   Empowered students to develop effective study habits and use their strengths to succeed in psychology courses
+-   Collaborated with Dr. Keith Wylie and other students on a published systematic review examining the role of language fluency in speaker’s perceived truthfulness
+-   Aggregated and interpreted effect sizes from previous studies on the topic to guide conclusions of the systematic review
