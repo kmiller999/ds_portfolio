@@ -19,75 +19,50 @@ about:
 ::: {#bio}
 ### About Me
 
-I am an entry-level data analyst with a diverse skill set and expertise cultivated through graduate-level studies in neuroscience and data analytics.
+I am a Data Analyst with a diverse skill set that ranges from statistical analysis to cutting-edge data mining techniques. Currently, as a Data Quality Specialist, I ensure data integrity and design automate the communication of data quality issues to stakeholders.
 
-My most recent master’s in data analytics has further solidified my foundation in statistical expertise, particularly with advanced machine learning models. I am actively enhancing my versatility as a data analyst by applying these techniques—including Clustering, Deep Learning, Dimensionality Reduction, and Natural Language Processing (NLP)—to answer novel research questions.
+In 2025, I am focused on advancing my skills in process automation and data engineering to transition into a Data Engineering role. This year's projects aim to develop competencies in:
 
-This approach, combined with my background in academic research, enables me to approach data analytics with a methodical, research-oriented mindset, focusing on deriving novel insights. For applications of my expertise and skills, please check out my expanding [Projects](projects.html) section. 
+-   Advanced ETL workflows, including extracting data from APIs and leveraging pipelines in Azure Data Factory
+
+-   Automating data pipelines for efficient data extraction and processing
+
+-   SQL database management and query optimization
+
+-   CI/CD to streamline pipeline testing and management
 :::
+
+### Programming Languages
 
 ::: columns
 ::: {.column width="48%"}
-### Education
-
-#### MS Data Analytics
-
-::: columns
-::: {.column width="70%"}
-Western Governors University
-:::
-::: {.column width="30%"}
-05/2024
-:::
-:::
-
-#### MA Psychology
-
-::: columns 
-::: {.column width="70%"}
-University of Nebraska-Lincoln
-:::
-::: {.column width="30%"}
-08/2023
-:::
-:::
-
-#### BS Psychology
-
-::: columns 
-::: {.column width="70%"}
-Emporia State University 
-:::
-::: {.column width="30%"}
-05/2021
-:::
-:::
-:::
-
-::: {.column width="50%"}
-### Programming Languages
 
 #### Python ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Python))
+
 Pandas, Numpy, Scikit-learn, statsmodels
 
 #### R ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=R))
+
 tidyverse, afex
+:::
+
+::: {.column width="50%"}
 
 #### SQL ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=SQL))
-PostgreSQL, SQLite
+
+SQL Server, PostgreSQL, SQLite
 
 #### Linux
+
 Terminal navigation, script and batch job deployment
-
 :::
 :::
-
 
 ### Skills and Interests
 
-For sake of brevity, I only included topics with a project example or that I am highly experienced with. 
+For sake of brevity, I only included topics with a project example or that I was unable to describe fully on my [Resume](https://kmiller999.github.io/ds_portfolio/resume.html).
 
--   [**Inferential Statistical Modeling**]{.underline}: bivariate and multivariate ANOVA and Regression
+-   [**Inferential Statistical Modeling**]{.underline}: bivariate and multivariate ANOVA and Regression (linear and logistic)
 
 -   [**Tree-Based Models**]{.underline}: Decision Trees and Random Forest Models ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Random%20Forest))
 
@@ -98,36 +73,3 @@ For sake of brevity, I only included topics with a project example or that I am 
 -   [**Market Basket Analysis**]{.underline}: Support, Confidence, and Lift ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Market%20Basket%20Analysis))
 
 -   [**Data Visualization**]{.underline}: Tableau dashboards ([Examples](https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/tableau_dash.html)), Matplotlib and Seaborn in Python ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Python)), and GGplot2 in R ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=R))
-
-
-### Experience
-
-::: columns
-::: {.column width="85%"}
-#### Graduate Research Assistant
-:::
-
-::: {.column width="15%"}
-#### 2021-2023
-:::
-:::
-
-**Department of Psychology, University of Nebraska-Lincoln**
-
--   Applied advanced statistical and programming techniques to analyze and report insights from multiple magnetic resonance imaging (MRI) studies
--   Collaborated to streamline brain imaging and behavioral data analysis pipelines for improved efficiency and usability of data
-
-::: columns
-::: {.column width="85%"}
-#### Undergraduate Research Assistant
-:::
-
-::: {.column width="15%"}
-#### 2020-2021
-:::
-:::
-
-**Department of Psychology, Emporia State University**
-
--   Collaborated with Dr. Keith Wylie and other students on a published systematic review examining the role of language fluency in speaker’s perceived truthfulness
--   Aggregated and interpreted effect sizes from previous studies on the topic to guide conclusions of the systematic review
