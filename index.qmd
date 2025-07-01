@@ -60,7 +60,7 @@ Terminal navigation, script and batch job deployment
 
 ### Skills and Interests
 
-For sake of brevity, I only included topics with a project example or that I was unable to describe fully on my [Resume](https://kmiller999.github.io/ds_portfolio/resume.html).
+For sake of brevity, I only included topics with a project example or that I was unable to describe fully on my ([Resume](https://kmiller999.github.io/ds_portfolio/resume.html)).
 
 -   [**Inferential Statistical Modeling**]{.underline}: bivariate and multivariate ANOVA and Regression (linear and logistic)
 
