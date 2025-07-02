@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -25,7 +25,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -61,6 +61,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -101,7 +102,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -110,6 +117,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -126,10 +134,10 @@ div.csl-indent {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Kevin Miller</span>
     </a>
@@ -141,38 +149,38 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../projects.html" rel="" target="">
- <span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../../../projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../resume.html" rel="" target="">
- <span class="menu-text">Resume</span></a>
+    <a class="nav-link" href="../../../resume.html"> 
+<span class="menu-text">Resume</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:kevinmiller1218@gmail.com" rel="" target=""><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:kevinmiller1218@gmail.com"> <i class="bi bi-envelope" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/kmiller999" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/kmiller999"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/kevin-miller-375031204/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/kevin-miller-375031204/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -222,6 +230,7 @@ div.csl-indent {
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
 
 
 
@@ -453,7 +462,6 @@ Name: count, dtype: int64
 </code></pre>
 </div>
 </div>
-<div>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># show distribution for salary_in_usd</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>sns.histplot(job_df[<span class="st">'salary_in_usd'</span>])</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
@@ -461,14 +469,13 @@ Name: count, dtype: int64
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># show distribution for salary</span></span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>sns.histplot(job_df[<span class="st">'salary'</span>])</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell quarto-layout-panel" data-execution_count="6">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="capstone_report_files/figure-html/cell-7-output-1.png" class="img-fluid" width="593"></p>
+<div class="cell quarto-layout-panel" data-execution_count="6" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="capstone_report_files/figure-html/cell-7-output-1.png" width="593" height="429"></p>
 </div>
-<div class="cell-output cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="capstone_report_files/figure-html/cell-7-output-2.png" class="img-fluid" width="593"></p>
-</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="capstone_report_files/figure-html/cell-7-output-2.png" width="593" height="429"></p>
 </div>
 </div>
 </div>
@@ -504,7 +511,7 @@ Name: count, dtype: int64</code></pre>
 </div>
 <section id="a-chi-square-model-preparation" class="level3">
 <h3 class="anchored" data-anchor-id="a-chi-square-model-preparation">3.A: Chi-Square Model Preparation</h3>
-<p>Initial cross tabulations characterized the expected frequencies of <code>experience_level</code> and <code>job_category</code> before running the Chi-Square model (see <a href="#tbl-exp-cts">Table&nbsp;1</a>). The a-priori criteria defined in this project’s proposal was that any job categories with fewer than five expected counts in any cell would be combined with other job categories meeting this criteria. Such low expected counts would be abnormally low for a dataset of this size, and collapsing categories can serve as a sound solution without incurring data loss <span class="citation" data-cites="bewick2003">(<a href="#ref-bewick2003" role="doc-biblioref">Bewick et al., 2003</a>)</span>. The job categories Cloud and Database, Data Management and Strategy, and Data Quality and Operations all had fewer than five expected counts for at least one experience level, leading these to be combined into one category (see <a href="#tbl-exp-cts-1">Table&nbsp;1 (a)</a>). Rather than labeling this category as “Other,” these categories all pertained to Data Management, which served as a more descriptive label (see <a href="#tbl-exp-cts-2">Table&nbsp;1 (b)</a>). The final cross tabulation to be used in the Chi-Square analysis was saved as <code>trans_refined_ct</code>.</p>
+<p>Initial cross tabulations characterized the expected frequencies of <code>experience_level</code> and <code>job_category</code> before running the Chi-Square model (see <a href="#tbl-exp-cts" class="quarto-xref">Table&nbsp;1</a>). The a-priori criteria defined in this project’s proposal was that any job categories with fewer than five expected counts in any cell would be combined with other job categories meeting this criteria. Such low expected counts would be abnormally low for a dataset of this size, and collapsing categories can serve as a sound solution without incurring data loss <span class="citation" data-cites="bewick2003">(<a href="#ref-bewick2003" role="doc-biblioref">Bewick et al., 2003</a>)</span>. The job categories Cloud and Database, Data Management and Strategy, and Data Quality and Operations all had fewer than five expected counts for at least one experience level, leading these to be combined into one category (see <a href="#tbl-exp-cts-1" class="quarto-xref">Table&nbsp;1 (a)</a>). Rather than labeling this category as “Other,” these categories all pertained to Data Management, which served as a more descriptive label (see <a href="#tbl-exp-cts-2" class="quarto-xref">Table&nbsp;1 (b)</a>). The final cross tabulation to be used in the Chi-Square analysis was saved as <code>trans_refined_ct</code>.</p>
 <div class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create crosstab for experience_level and job_category, with margins</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
@@ -546,7 +553,7 @@ Name: count, dtype: int64</code></pre>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>                          ct_us_job_df[<span class="st">'job_category'</span>], margins<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>marginal_expected_table <span class="op">=</span> sm.stats.Table(marginal_ct)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div>
+<div class="cell" data-layout-nrow="2" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create rounded, transposed versions of tables</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>ct_exp_md <span class="op">=</span> expected_table.fittedvalues.<span class="bu">round</span>(<span class="dv">2</span>).T</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>ct_ref_exp_md <span class="op">=</span> marginal_expected_table.fittedvalues.<span class="bu">round</span>(<span class="dv">2</span>).T</span>
@@ -554,14 +561,21 @@ Name: count, dtype: int64</code></pre>
 <span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co"># display markdown versions of tables</span></span>
 <span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>display(Markdown(ct_exp_md.to_markdown()))</span>
 <span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>display(Markdown(ct_ref_exp_md.to_markdown()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="tbl-exp-cts" class="cell tbl-parent quarto-layout-panel anchored" data-execution_count="17">
-<div class="panel-caption table-caption">
-<p>Table&nbsp;1: Original and refined expected counts contingency tables.</p>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-exp-cts-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-exp-cts" style="flex-basis: 100.0%;justify-content: center;">
-<table class="table table-sm table-striped small">
-<caption>(a) Original (ten job categories)</caption>
+<div id="tbl-exp-cts" class="quarto-layout-panel anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-exp-cts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Original and refined expected counts contingency tables.
+</figcaption>
+<div aria-describedby="tbl-exp-cts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-exp-cts" style="flex-basis: 100.0%;justify-content: center;">
+<div id="tbl-exp-cts-1" class="do-not-create-environment quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-exp-cts-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Original (ten job categories)
+</figcaption>
+<div aria-describedby="tbl-exp-cts-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="tbl-exp-cts-1" class="do-not-create-environment table table-sm table-striped small">
 <colgroup>
 <col style="width: 34%">
 <col style="width: 16%">
@@ -672,11 +686,19 @@ Name: count, dtype: int64</code></pre>
 </tbody>
 </table>
 </div>
+</figure>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-exp-cts-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-exp-cts" style="flex-basis: 100.0%;justify-content: center;">
-<table class="table table-sm table-striped small">
-<caption>(b) Refined (eight job categories)</caption>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="cell-output cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-exp-cts" style="flex-basis: 100.0%;justify-content: center;">
+<div id="tbl-exp-cts-2" class="do-not-create-environment quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-exp-cts-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Refined (eight job categories)
+</figcaption>
+<div aria-describedby="tbl-exp-cts-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="tbl-exp-cts-2" class="do-not-create-environment table table-sm table-striped small">
 <colgroup>
 <col style="width: 34%">
 <col style="width: 16%">
@@ -771,7 +793,12 @@ Name: count, dtype: int64</code></pre>
 </tbody>
 </table>
 </div>
+</figure>
 </div>
+</div>
+</div>
+</div>
+</figure>
 </div>
 </div>
 <div class="cell" data-execution_count="18">
@@ -832,7 +859,7 @@ Name: count, dtype: int64</code></pre>
 </section>
 <section id="b.2-feature-selection" class="level4">
 <h4 class="anchored" data-anchor-id="b.2-feature-selection">3.B.2: Feature Selection</h4>
-<p>Once the features were all in a numeric format, scikit-learn’s <code>SelectKBest()</code> discerned which variables were significantly associated with salary (see <a href="#tbl-feat-select">Table&nbsp;2</a> for a summary). The scoring function used was <code>f_regression()</code>, due to the target feature being continuous. Three features were not significantly associated with <code>salary_in_usd</code> at the <em>p</em> &lt; .05 level (<code>cat__work_setting_Hybrid</code>, <code>cat__job_category_Data Architecture and Modeling</code>, <code>cat__job_category_Cloud and Database</code>). These features were dropped from subsequent analyses, leaving a total of fourteen features.</p>
+<p>Once the features were all in a numeric format, scikit-learn’s <code>SelectKBest()</code> discerned which variables were significantly associated with salary (see <a href="#tbl-feat-select" class="quarto-xref">Table&nbsp;2</a> for a summary). The scoring function used was <code>f_regression()</code>, due to the target feature being continuous. Three features were not significantly associated with <code>salary_in_usd</code> at the <em>p</em> &lt; .05 level (<code>cat__work_setting_Hybrid</code>, <code>cat__job_category_Data Architecture and Modeling</code>, <code>cat__job_category_Cloud and Database</code>). These features were dropped from subsequent analyses, leaving a total of fourteen features.</p>
 <div class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import libraries for feature selection</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_selection <span class="im">import</span> SelectKBest, f_regression</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -863,10 +890,14 @@ Name: count, dtype: int64</code></pre>
 <span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="co"># sort lowest p-values first </span></span>
 <span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>feature_df <span class="op">=</span> feature_df.sort_values(by<span class="op">=</span><span class="st">'P-value'</span>, ascending<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>display(Markdown(feature_df.to_markdown()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-feat-select" class="cell quarto-float anchored" data-execution_count="27">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-feat-select-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Feature importances ranked by significance.
+</figcaption>
+<div aria-describedby="tbl-feat-select-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output cell-output-display">
-<div id="tbl-feat-select" class="anchored">
-<table class="table table-sm table-striped small">
-<caption>Table&nbsp;2: Feature importances ranked by significance.</caption>
+<table class="do-not-create-environment cell table table-sm table-striped small">
 <colgroup>
 <col style="width: 5%">
 <col style="width: 65%">
@@ -988,6 +1019,8 @@ Name: count, dtype: int64</code></pre>
 </table>
 </div>
 </div>
+</figure>
+</div>
 </div>
 <div class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># drop non-significant p-values from features</span></span>
@@ -1036,7 +1069,7 @@ Name: count, dtype: int64</code></pre>
 </section>
 <section id="a.2-post-hoc-tests" class="level4">
 <h4 class="anchored" data-anchor-id="a.2-post-hoc-tests">4.A.2: Post Hoc Tests</h4>
-<p>The post hoc tests were completed using code adapted from <span class="citation" data-cites="neuhof2018">Neuhof (<a href="#ref-neuhof2018" role="doc-biblioref">2018</a>)</span>, as this helped streamline the process for the 28 job category comparisons. Instead of printing these comparisons as in the original code, converting to and printing a dataframe yielded a cleaner output (see <a href="#tbl-chi-sig">Table&nbsp;3</a>). Given the large dataset at hand, a more stringent Bonferroni correction was used to correct for alpha inflation <span class="citation" data-cites="jafari2019">(<a href="#ref-jafari2019" role="doc-biblioref">Jafari &amp; Ansari-Pour, 2019</a>)</span>, as this method multiples the statistical significance by the number of comparisons made. Despite this, all 28 comparisons were statistically significant after the Bonferroni correction (Bonferroni-corrected <em>p</em>-range: <em>p</em> &lt; .001 - <em>p</em> = .001). Focusing instead on the magnitude of the effect size in terms of <em>X<sup>2</sup></em>, the three strongest effects resulted from comparisons with Data Analysis (compared to Data Engineer, Machine Learning and AI, and Data Science and Research, respectively). The visualizations in the following suggest that Data Analysis had more Entry-level employees relative to the comparison categories.</p>
+<p>The post hoc tests were completed using code adapted from <span class="citation" data-cites="neuhof2018">Neuhof (<a href="#ref-neuhof2018" role="doc-biblioref">2018</a>)</span>, as this helped streamline the process for the 28 job category comparisons. Instead of printing these comparisons as in the original code, converting to and printing a dataframe yielded a cleaner output (see <a href="#tbl-chi-sig" class="quarto-xref">Table&nbsp;3</a>). Given the large dataset at hand, a more stringent Bonferroni correction was used to correct for alpha inflation <span class="citation" data-cites="jafari2019">(<a href="#ref-jafari2019" role="doc-biblioref">Jafari &amp; Ansari-Pour, 2019</a>)</span>, as this method multiples the statistical significance by the number of comparisons made. Despite this, all 28 comparisons were statistically significant after the Bonferroni correction (Bonferroni-corrected <em>p</em>-range: <em>p</em> &lt; .001 - <em>p</em> = .001). Focusing instead on the magnitude of the effect size in terms of <em>X<sup>2</sup></em>, the three strongest effects resulted from comparisons with Data Analysis (compared to Data Engineer, Machine Learning and AI, and Data Science and Research, respectively). The visualizations in the following suggest that Data Analysis had more Entry-level employees relative to the comparison categories.</p>
 <div class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># code adapted from Neuhof (2018)</span></span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> combinations</span>
@@ -1068,10 +1101,14 @@ Name: count, dtype: int64</code></pre>
 <span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>by<span class="op">=</span><span class="st">'Statistic'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a><span class="co"># print as markdown</span></span>
 <span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>display(Markdown(chi2_df.to_markdown()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-chi-sig" class="cell quarto-float anchored" data-execution_count="33">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-chi-sig-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Job category comparisons ranked by Chi-Square statistic.
+</figcaption>
+<div aria-describedby="tbl-chi-sig-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output cell-output-display">
-<div id="tbl-chi-sig" class="anchored">
-<table class="table table-sm table-striped small">
-<caption>Table&nbsp;3: Job category comparisons ranked by Chi-Square statistic.</caption>
+<table class="do-not-create-environment cell table table-sm table-striped small">
 <colgroup>
 <col style="width: 4%">
 <col style="width: 67%">
@@ -1289,11 +1326,13 @@ Name: count, dtype: int64</code></pre>
 </table>
 </div>
 </div>
+</figure>
+</div>
 </div>
 </section>
 <section id="a.3-chi-square-visualizations" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="a.3-chi-square-visualizations">4.A.3: Chi-Square Visualizations</h4>
-<p>The contingency cross tabulation tables are shown below for the observed (see <a href="#tbl-ct-figs-1">Table&nbsp;4 (a)</a>) and expected counts (see <a href="#tbl-ct-figs-2">Table&nbsp;4 (b)</a>). Rather than focusing on these individually, a residual table was created to show observed counts deviated from the expected counts for each cell (see <a href="#tbl-ct-figs-3">Table&nbsp;4 (c)</a>). Residuals were calculated as the difference between the observed and expected counts divided by the expected values ((O - E) / E), which yields both the direction and magnitude of difference between the two. The accompanying heatmap (see <a href="#fig-chi-heatmap">Figure&nbsp;1</a>) shows where counts were greater than expected in red (e.g., Entry-level and Data Analysis or Executive and Leadership and Management) and fewer than expected in blue (e.g., Entry-level and Data Architecture and Modeling or Executive and Data Management). The bivariate plots compare the experience level composition across job categories, using the proportion (<a href="#fig-chi-bivariate-1">Figure&nbsp;2 (a)</a>) and count of employees (<a href="#fig-chi-bivariate-2">Figure&nbsp;2 (b)</a>) with each experience level. <a href="#fig-chi-bivariate-1">Figure&nbsp;2 (a)</a> re-iterates the findings that Data Analysis for Entry-level employees and Leadership and Management for Executive employees were relative peaks among less-represented experience levels. Conversely, Senior employees comprised a sizable portion of every job category, and the clear majority of a few (e.g., Data Architecture and Modeling, Machine Learning and AI). <a href="#fig-chi-bivariate-2">Figure&nbsp;2 (b)</a> uses number of employees for the y-axis variable, which takes into account size differences between job categories. This again depicts the relative commonality of Senior employees, as three of four largest categories (Data Science and Research, Data Engineering, and Machine Learning and AI) contained a substantial number of Senior employees.</p>
+<p>The contingency cross tabulation tables are shown below for the observed (see <a href="#tbl-ct-figs-1" class="quarto-xref">Table&nbsp;4 (a)</a>) and expected counts (see <a href="#tbl-ct-figs-2" class="quarto-xref">Table&nbsp;4 (b)</a>). Rather than focusing on these individually, a residual table was created to show observed counts deviated from the expected counts for each cell (see <a href="#tbl-ct-figs-3" class="quarto-xref">Table&nbsp;4 (c)</a>). Residuals were calculated as the difference between the observed and expected counts divided by the expected values ((O - E) / E), which yields both the direction and magnitude of difference between the two. The accompanying heatmap (see <a href="#fig-chi-heatmap" class="quarto-xref">Figure&nbsp;1</a>) shows where counts were greater than expected in red (e.g., Entry-level and Data Analysis or Executive and Leadership and Management) and fewer than expected in blue (e.g., Entry-level and Data Architecture and Modeling or Executive and Data Management). The bivariate plots compare the experience level composition across job categories, using the proportion (<a href="#fig-chi-bivariate-1" class="quarto-xref">Figure&nbsp;2 (a)</a>) and count of employees (<a href="#fig-chi-bivariate-2" class="quarto-xref">Figure&nbsp;2 (b)</a>) with each experience level. <a href="#fig-chi-bivariate-1" class="quarto-xref">Figure&nbsp;2 (a)</a> re-iterates the findings that Data Analysis for Entry-level employees and Leadership and Management for Executive employees were relative peaks among less-represented experience levels. Conversely, Senior employees comprised a sizable portion of every job category, and the clear majority of a few (e.g., Data Architecture and Modeling, Machine Learning and AI). <a href="#fig-chi-bivariate-2" class="quarto-xref">Figure&nbsp;2 (b)</a> uses number of employees for the y-axis variable, which takes into account size differences between job categories. This again depicts the relative commonality of Senior employees, as three of four largest categories (Data Science and Research, Data Engineering, and Machine Learning and AI) contained a substantial number of Senior employees.</p>
 <div class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set order of Chi-Square variables</span></span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="co"># set experience order</span></span>
@@ -1331,19 +1370,26 @@ Name: count, dtype: int64</code></pre>
 <span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>observed_df <span class="op">=</span> observed_df.<span class="bu">round</span>(<span class="dv">2</span>)</span>
 <span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>resid_div_ct_df <span class="op">=</span> resid_div_ct_df.<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="page-columns page-full">
+<div class="cell page-columns page-full" data-layout="[[65,35],[100]]" data-execution_count="39">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># display tables in markdown format</span></span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>display(Markdown(observed_df.to_markdown()))</span>
 <span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>display(Markdown(expected_df.to_markdown(index<span class="op">=</span><span class="va">False</span>)))</span>
 <span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>display(Markdown(resid_div_ct_df.to_markdown()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="tbl-ct-figs" class="cell tbl-parent column-body-outset quarto-layout-panel anchored" data-execution_count="39">
-<div class="panel-caption table-caption">
-<p>Table&nbsp;4: Contingency Tables</p>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-ct-figs-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-ct-figs" style="flex-basis: 65.0%;justify-content: center;">
-<table class="table table-sm table-striped small">
-<caption>(a) Observed counts.</caption>
+<div id="tbl-ct-figs" class="quarto-layout-panel anchored page-columns page-full">
+<figure class="quarto-float quarto-float-tbl figure page-columns page-full">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ct-figs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Contingency Tables
+</figcaption>
+<div aria-describedby="tbl-ct-figs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<div class="quarto-layout-row page-columns page-full">
+<div class="cell-output cell-output-display column-body-outset quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-ct-figs" style="flex-basis: 65.0%;justify-content: center;">
+<div id="tbl-ct-figs-1" class="do-not-create-environment quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-ct-figs-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Observed counts.
+</figcaption>
+<div aria-describedby="tbl-ct-figs-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="tbl-ct-figs-1" class="do-not-create-environment table table-sm table-striped small">
 <colgroup>
 <col style="width: 38%">
 <col style="width: 18%">
@@ -1420,9 +1466,17 @@ Name: count, dtype: int64</code></pre>
 </tbody>
 </table>
 </div>
-<div id="tbl-ct-figs-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-ct-figs" style="flex-basis: 35.0%;justify-content: center;">
-<table class="table table-sm table-striped small">
-<caption>(b) Expected counts.</caption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display column-body-outset quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-ct-figs" style="flex-basis: 35.0%;justify-content: center;">
+<div id="tbl-ct-figs-2" class="do-not-create-environment quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-ct-figs-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Expected counts.
+</figcaption>
+<div aria-describedby="tbl-ct-figs-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="tbl-ct-figs-2" class="do-not-create-environment table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: right;">Entry-level</th>
@@ -1483,11 +1537,19 @@ Name: count, dtype: int64</code></pre>
 </tbody>
 </table>
 </div>
+</figure>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-ct-figs-3" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-ct-figs" style="flex-basis: 100.0%;justify-content: center;">
-<table class="table table-sm table-striped small">
-<caption>(c) Residual counts.</caption>
+</div>
+</div>
+<div class="quarto-layout-row page-columns page-full">
+<div class="cell-output cell-output-display column-body-outset quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-ct-figs" style="flex-basis: 100.0%;justify-content: center;">
+<div id="tbl-ct-figs-3" class="do-not-create-environment quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-ct-figs-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Residual counts.
+</figcaption>
+<div aria-describedby="tbl-ct-figs-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="tbl-ct-figs-3" class="do-not-create-environment table table-sm table-striped small">
 <colgroup>
 <col style="width: 38%">
 <col style="width: 18%">
@@ -1564,7 +1626,12 @@ Name: count, dtype: int64</code></pre>
 </tbody>
 </table>
 </div>
+</figure>
 </div>
+</div>
+</div>
+</div>
+</figure>
 </div>
 </div>
 <div class="cell" data-execution_count="40">
@@ -1573,10 +1640,14 @@ Name: count, dtype: int64</code></pre>
 <span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>resid_heatmap.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Experience Level'</span>, ylabel<span class="op">=</span><span class="st">'Job Category'</span>)</span>
 <span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<div id="fig-chi-heatmap" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="capstone_report_files/figure-html/fig-chi-heatmap-output-1.png" width="762" height="429" class="figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: Chi-Square residual heatmap. Positive values denote greater observed counts than expected in red. Negative values denoting fewer observed counts than expected are shown in blue.</figcaption>
+<div id="fig-chi-heatmap" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-chi-heatmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="capstone_report_files/figure-html/fig-chi-heatmap-output-1.png" width="762" height="429" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chi-heatmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Chi-Square residual heatmap. Positive values denote greater observed counts than expected in red. Negative values denoting fewer observed counts than expected are shown in blue.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1587,7 +1658,6 @@ Name: count, dtype: int64</code></pre>
 <span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">'Entry-level'</span>], ordered<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>ct_us_job_df.experience_level <span class="op">=</span> ct_us_job_df.experience_level.astype(experience_order)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="page-columns page-full">
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># show bivariate plots for experience level and job category proportions and counts</span></span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> sns.color_palette(<span class="st">'colorblind'</span>):</span>
 <span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>    prop_hist <span class="op">=</span> sns.histplot(data<span class="op">=</span>ct_us_job_df, x<span class="op">=</span><span class="st">'job_category'</span>, </span>
@@ -1607,29 +1677,40 @@ Name: count, dtype: int64</code></pre>
 <span id="cb51-17"><a href="#cb51-17" aria-hidden="true" tabindex="-1"></a>    count_hist.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Job Category'</span>, ylabel<span class="op">=</span><span class="st">'Number of Employees'</span>)</span>
 <span id="cb51-18"><a href="#cb51-18" aria-hidden="true" tabindex="-1"></a>    count_hist.get_legend().set_title(<span class="st">'Experience Level'</span>)</span>
 <span id="cb51-19"><a href="#cb51-19" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="fig-chi-bivariate" class="cell column-body-outset quarto-layout-panel" data-execution_count="42">
-<figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 49.5%;justify-content: center;">
-<div id="fig-chi-bivariate-1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="capstone_report_files/figure-html/fig-chi-bivariate-output-1.png" class="img-fluid figure-img" data-ref-parent="fig-chi-bivariate" width="589"></p>
-<figcaption class="figure-caption">(a) Proportion of job category with each experience level.</figcaption>
+<div id="fig-chi-bivariate" class="quarto-layout-panel page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-chi-bivariate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<div class="quarto-layout-row page-columns page-full">
+<div class="cell-output cell-output-display quarto-layout-cell-subref quarto-layout-cell page-columns page-full" data-ref-parent="fig-chi-bivariate" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-chi-bivariate-1" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full">
+<figure class="quarto-float quarto-subfloat-fig figure page-columns page-full">
+<div aria-describedby="fig-chi-bivariate-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="capstone_report_files/figure-html/fig-chi-bivariate-output-1.png" data-ref-parent="fig-chi-bivariate" width="589" height="499" class="figure-img column-body-outset">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-chi-bivariate-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Proportion of job category with each experience level.
+</figcaption>
 </figure>
 </div>
 </div>
-<div class="cell-output cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.5%;justify-content: center;">
-<div id="fig-chi-bivariate-2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="capstone_report_files/figure-html/fig-chi-bivariate-output-2.png" class="img-fluid figure-img" data-ref-parent="fig-chi-bivariate" width="602"></p>
-<figcaption class="figure-caption">(b) Number of employees with experience level across job categories.</figcaption>
+<div class="cell-output cell-output-display quarto-layout-cell-subref quarto-layout-cell page-columns page-full" data-ref-parent="fig-chi-bivariate" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-chi-bivariate-2" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full">
+<figure class="quarto-float quarto-subfloat-fig figure page-columns page-full">
+<div aria-describedby="fig-chi-bivariate-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="capstone_report_files/figure-html/fig-chi-bivariate-output-2.png" data-ref-parent="fig-chi-bivariate" width="602" height="494" class="figure-img column-body-outset">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-chi-bivariate-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Number of employees with experience level across job categories.
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2: Experience level and job category composition. Abbreviations: BI/Viz: BI and Visualization; DA: Data Analysis; DArc/Modeling: Data Architecture and Modeling; DE: Data Engineering; DM: Data Management; DS/Research: Data Science and Research; Leadership: Leadership and Management; ML/AI: Machine Learning and AI.</figcaption><p></p>
-</figure>
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chi-bivariate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Experience level and job category composition. Abbreviations: BI/Viz: BI and Visualization; DA: Data Analysis; DArc/Modeling: Data Architecture and Modeling; DE: Data Engineering; DM: Data Management; DS/Research: Data Science and Research; Leadership: Leadership and Management; ML/AI: Machine Learning and AI.
+</figcaption>
+</figure>
 </div>
 </section>
 </section>
@@ -1736,7 +1817,7 @@ Test R-Squared:  0.2525</code></pre>
 </section>
 <section id="b.3-feature-importances-and-tree-diagram" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="b.3-feature-importances-and-tree-diagram">4.B.3: Feature Importances and Tree Diagram</h4>
-<p>Feature importances were extracted from the RFR model, converted to a dataframe, and sorted in descending order (see <a href="#tbl-feature-imps">Table&nbsp;5</a>). The values ranged from .008 to .286, with all features explaining at least some variance, and the magnitude gradually decreasing with each subsequent feature (see <a href="#fig-feat-imp">Figure&nbsp;3</a>). The top three features included the Data Analysis job category (.286), Machine Learning and AI job category (.162), and Senior experience level (.136). Unsurprisingly, these were the first three features used to split the data in the RFR tree diagram (see <a href="#fig-tree-three">Figure&nbsp;4</a>), which underscores each feature’s importance to estimating salary. The code for this diagram was adapted from a TensorFlow tutorial <span class="citation" data-cites="visualiz2024">(<a href="#ref-visualiz2024" role="doc-biblioref"><em>Visualizing TensorFlow Decision Forest Trees with Dtreeviz</em>, 2024</a>)</span>, and this figure makes it easy to interpret how the absence or presence of an experience level, job category, or work setting altered the RFR model’s salary estimate. With the depth of the model, however, only the first three levels of the diagram could be displayed before the clarity of the figure diminished.</p>
+<p>Feature importances were extracted from the RFR model, converted to a dataframe, and sorted in descending order (see <a href="#tbl-feature-imps" class="quarto-xref">Table&nbsp;5</a>). The values ranged from .008 to .286, with all features explaining at least some variance, and the magnitude gradually decreasing with each subsequent feature (see <a href="#fig-feat-imp" class="quarto-xref">Figure&nbsp;3</a>). The top three features included the Data Analysis job category (.286), Machine Learning and AI job category (.162), and Senior experience level (.136). Unsurprisingly, these were the first three features used to split the data in the RFR tree diagram (see <a href="#fig-tree-three" class="quarto-xref">Figure&nbsp;4</a>), which underscores each feature’s importance to estimating salary. The code for this diagram was adapted from a TensorFlow tutorial <span class="citation" data-cites="visualiz2024">(<a href="#ref-visualiz2024" role="doc-biblioref"><em>Visualizing TensorFlow Decision Forest Trees with Dtreeviz</em>, 2024</a>)</span>, and this figure makes it easy to interpret how the absence or presence of an experience level, job category, or work setting altered the RFR model’s salary estimate. With the depth of the model, however, only the first three levels of the diagram could be displayed before the clarity of the figure diminished.</p>
 <div class="cell" data-execution_count="55">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create df for features and corresponding importances </span></span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>feature_df <span class="op">=</span> pd.DataFrame({<span class="st">'Feature'</span>: X.columns, </span>
@@ -1746,10 +1827,14 @@ Test R-Squared:  0.2525</code></pre>
 <span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>feature_df <span class="op">=</span> feature_df.sort_values(by<span class="op">=</span><span class="st">'Importance'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a><span class="co"># display sorted df as markdown</span></span>
 <span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a>display(Markdown(feature_df.to_markdown()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-feature-imps" class="cell quarto-float anchored" data-execution_count="55">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-feature-imps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5: Sorted feature importances in Random Forest model.
+</figcaption>
+<div aria-describedby="tbl-feature-imps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output cell-output-display">
-<div id="tbl-feature-imps" class="anchored">
-<table class="table table-sm table-striped small">
-<caption>Table&nbsp;5: Sorted feature importances in Random Forest model.</caption>
+<table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: right;"></th>
@@ -1832,6 +1917,8 @@ Test R-Squared:  0.2525</code></pre>
 </table>
 </div>
 </div>
+</figure>
+</div>
 </div>
 <div class="cell" data-execution_count="56">
 <div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create split version of encoded feature names</span></span>
@@ -1847,10 +1934,14 @@ Test R-Squared:  0.2525</code></pre>
 <span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>    feature_bar.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Impurity-based Feature Importance'</span>, ylabel<span class="op">=</span><span class="st">'Feature'</span>)</span>
 <span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<div id="fig-feat-imp" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="capstone_report_files/figure-html/fig-feat-imp-output-1.png" width="796" height="429" class="figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: Feature importances in Random Forest model.</figcaption>
+<div id="fig-feat-imp" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-feat-imp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="capstone_report_files/figure-html/fig-feat-imp-output-1.png" width="796" height="429" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-feat-imp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Feature importances in Random Forest model.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1866,11 +1957,15 @@ Test R-Squared:  0.2525</code></pre>
 <span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a>                               target_name<span class="op">=</span><span class="st">'Salary'</span>)</span>
 <span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a><span class="co"># only show first three levels of depth for sake of clarity</span></span>
 <span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a>viz_rfr_model.view(depth_range_to_display<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">2</span>], scale<span class="op">=</span><span class="fl">1.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display column-body" data-execution_count="58">
-<div id="fig-tree-three" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="capstone_report_files/figure-html/fig-tree-three-output-1.svg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: Tree diagram from Random Forest model. Only the first three levels are shown to preserve figure clarity.</figcaption>
+<div class="cell-output cell-output-display page-columns page-full" data-execution_count="58">
+<div id="fig-tree-three" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-tree-three-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="capstone_report_files/figure-html/fig-tree-three-output-1.svg" class="img-fluid figure-img column-body">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tree-three-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Tree diagram from Random Forest model. Only the first three levels are shown to preserve figure clarity.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1888,7 +1983,7 @@ Test R-Squared:  0.2525</code></pre>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-getafu2024" class="csl-entry" role="listitem">
 ai-jobs.net. (2024). <em>Get a full dataset of global AI, ML, Data Salaries</em>. <a href="https://ai-jobs.net/salaries/download/">https://ai-jobs.net/salaries/download/</a>
 </div>
@@ -2028,10 +2123,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -2041,8 +2135,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -2055,6 +2158,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -2098,6 +2320,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -2123,6 +2346,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -2183,6 +2432,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
