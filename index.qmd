@@ -19,24 +19,27 @@ about:
 ::: {#bio}
 ### About Me
 
-I am a Data Analyst with a diverse skill set that ranges from statistical analysis to cutting-edge data mining techniques. Currently, as a Data Quality Specialist, I ensure data integrity and design automate the communication of data quality issues to stakeholders.
+I am an end-to-end Data Scientist with a versatile skill set that spans statistical analysis, data modeling, machine learning, and modern data engineering. I am passionate about working across the full data lifecycle: from ingestion and transformation to modeling, deployment, and insight.
 
-In 2025, I am focused on advancing my skills in process automation and data engineering to transition into a Data Engineering role. This year's projects aim to develop competencies in:
+My work is driven by a passion for uncovering patterns in complex data and building systems that scale. While I continue to deepen my skills in data infrastructure and engineering, I remain committed to asking and answering novel questions through advanced data mining techniques.
 
--   Advanced ETL workflows, including extracting data from APIs and leveraging pipelines in Azure Data Factory
+My upcoming projects will highlight and strengthen my capabilities in:
 
--   Automating data pipelines for efficient data extraction and processing
+-   Building advanced ETL workflows using APIs and Python scripting
 
--   SQL database management and query optimization
+-   Integrating disparate data sources into analyzable, well-structured formats
 
--   CI/CD to streamline pipeline testing and management
+-   Designing scalable, relational database models using SQL
+
+-   Engineering features from complex datasets to model nuanced constructs
+
+-   Characterizing and predicting real-world decision-making behaviors
 :::
 
 ### Programming Languages
 
 ::: columns
 ::: {.column width="48%"}
-
 #### Python ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Python))
 
 Pandas, Numpy, Scikit-learn, statsmodels
@@ -47,7 +50,6 @@ tidyverse, afex
 :::
 
 ::: {.column width="50%"}
-
 #### SQL ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=SQL))
 
 SQL Server, PostgreSQL, SQLite
@@ -60,16 +62,16 @@ Terminal navigation, script and batch job deployment
 
 ### Skills and Interests
 
-For sake of brevity, I only included topics with a project example.
+For sake of brevity, I only included topics I have a great deal of experience with or a project example for.
 
 -   [**Inferential Statistical Modeling**]{.underline}: bivariate and multivariate ANOVA and Regression (linear and logistic)
 
 -   [**Tree-Based Models**]{.underline}: Decision Trees and Random Forest Models ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Random%20Forest))
 
--   [**Dimensionality Reduction**]{.underline}: Principal Component Analysis (PCA)
+-   [**Dimensionality Reduction**]{.underline}: Principal Component Analysis (PCA; [Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Dimensionality%20Reduction))
 
 -   [**Web Scraping**]{.underline}: BeautifulSoup and Selenium in Python ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Web%20Scraping))
 
 -   [**Market Basket Analysis**]{.underline}: Support, Confidence, and Lift ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Market%20Basket%20Analysis))
 
--   [**Data Visualization**]{.underline}: Tableau dashboards ([Examples](https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/tableau_dash.html)), Matplotlib and Seaborn in Python ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Python)), and GGplot2 in R ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=R))
+-   [**Data Visualization and Reporting**]{.underline}: Power BI and Tableau dashboards ([Examples](https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/tableau_dash.html))
