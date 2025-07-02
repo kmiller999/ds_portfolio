@@ -239,6 +239,40 @@ require(['plotly'], function(Plotly) {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#tldr" id="toc-tldr" class="nav-link active" data-scroll-target="#tldr">TL;DR</a></li>
+  <li><a href="#overview-and-motivation-for-analyses" id="toc-overview-and-motivation-for-analyses" class="nav-link" data-scroll-target="#overview-and-motivation-for-analyses">1: Overview and Motivation for Analyses</a></li>
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">2: Data Preparation</a>
+  <ul class="collapse">
+  <li><a href="#feature-investigation" id="toc-feature-investigation" class="nav-link" data-scroll-target="#feature-investigation">2.1: Feature Investigation</a></li>
+  </ul></li>
+  <li><a href="#pca" id="toc-pca" class="nav-link" data-scroll-target="#pca">3: PCA</a>
+  <ul class="collapse">
+  <li><a href="#pca-function" id="toc-pca-function" class="nav-link" data-scroll-target="#pca-function">3.1: PCA Function</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">4: 2024</a>
+  <ul class="collapse">
+  <li><a href="#outcomes-relation" id="toc-outcomes-relation" class="nav-link" data-scroll-target="#outcomes-relation">4.1: Outcomes Relation</a></li>
+  <li><a href="#pca-interpretation" id="toc-pca-interpretation" class="nav-link" data-scroll-target="#pca-interpretation">PCA Interpretation</a></li>
+  </ul></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">5: 2023</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">6: 2022</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">7: 2021</a></li>
+  <li><a href="#inter-year-interpretation" id="toc-inter-year-interpretation" class="nav-link" data-scroll-target="#inter-year-interpretation">8: Inter-Year Interpretation</a></li>
+  <li><a href="#run-intraclass-correlations-between-years" id="toc-run-intraclass-correlations-between-years" class="nav-link" data-scroll-target="#run-intraclass-correlations-between-years">9: Run Intraclass Correlations Between Years</a>
+  <ul class="collapse">
+  <li><a href="#yearly-deviations" id="toc-yearly-deviations" class="nav-link" data-scroll-target="#yearly-deviations">9.1: Yearly Deviations</a></li>
+  </ul></li>
+  <li><a href="#average-pc1-and-pc2-scores" id="toc-average-pc1-and-pc2-scores" class="nav-link" data-scroll-target="#average-pc1-and-pc2-scores">10: Average PC1 and PC2 Scores</a></li>
+  <li><a href="#summaryconclusion" id="toc-summaryconclusion" class="nav-link" data-scroll-target="#summaryconclusion">10: Summary/Conclusion</a></li>
+  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions">11: Future Directions</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
@@ -246,40 +280,7 @@ require(['plotly'], function(Plotly) {
 
 
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#tldr" id="toc-tldr">TL;DR</a></li>
-  <li><a href="#overview-and-motivation-for-analyses" id="toc-overview-and-motivation-for-analyses">1: Overview and Motivation for Analyses</a></li>
-  <li><a href="#data-preparation" id="toc-data-preparation">2: Data Preparation</a>
-  <ul>
-  <li><a href="#feature-investigation" id="toc-feature-investigation">2.1: Feature Investigation</a></li>
-  </ul></li>
-  <li><a href="#pca" id="toc-pca">3: PCA</a>
-  <ul>
-  <li><a href="#pca-function" id="toc-pca-function">3.1: PCA Function</a></li>
-  </ul></li>
-  <li><a href="#section" id="toc-section">4: 2024</a>
-  <ul>
-  <li><a href="#outcomes-relation" id="toc-outcomes-relation">4.1: Outcomes Relation</a></li>
-  <li><a href="#pca-interpretation" id="toc-pca-interpretation">PCA Interpretation</a></li>
-  </ul></li>
-  <li><a href="#section-1" id="toc-section-1">5: 2023</a></li>
-  <li><a href="#section-2" id="toc-section-2">6: 2022</a></li>
-  <li><a href="#section-3" id="toc-section-3">7: 2021</a></li>
-  <li><a href="#inter-year-interpretation" id="toc-inter-year-interpretation">8: Inter-Year Interpretation</a></li>
-  <li><a href="#run-intraclass-correlations-between-years" id="toc-run-intraclass-correlations-between-years">9: Run Intraclass Correlations Between Years</a>
-  <ul>
-  <li><a href="#yearly-deviations" id="toc-yearly-deviations">9.1: Yearly Deviations</a></li>
-  </ul></li>
-  <li><a href="#average-pc1-and-pc2-scores" id="toc-average-pc1-and-pc2-scores">10: Average PC1 and PC2 Scores</a></li>
-  <li><a href="#summaryconclusion" id="toc-summaryconclusion">10: Summary/Conclusion</a></li>
-  <li><a href="#future-directions" id="toc-future-directions">11: Future Directions</a></li>
-  <li><a href="#acknowledgements" id="toc-acknowledgements">Acknowledgements</a></li>
-  <li><a href="#references" id="toc-references">References</a></li>
-  </ul>
-</nav>
+
 <section id="tldr" class="level2">
 <h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
 <p>Major League hitters must balance three competing drives to provide offensive value for their team:</p>
@@ -652,7 +653,7 @@ if (outputEl) {{
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>display(Markdown(PCA_results_24[<span class="st">'pc_values'</span>].<span class="bu">round</span>(<span class="dv">3</span>).to_markdown()))</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># show loading scores of features to show what PCs mean</span></span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>display(Markdown(PCA_results_24[<span class="st">'loadings'</span>].<span class="bu">round</span>(<span class="dv">3</span>).to_markdown()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="780aa78a" class="cell column-body quarto-layout-panel" data-layout="[[40,60]]" data-execution_count="11">
+<div id="780aa78a" class="cell column-body quarto-layout-panel" data-execution_count="11" data-layout="[[40,60]]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
 <table class="table table-sm table-striped small">
@@ -1002,7 +1003,7 @@ if (outputEl) {{
 </div>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>display(Markdown(PCA_results_23[<span class="st">'pc_values'</span>].<span class="bu">round</span>(<span class="dv">3</span>).to_markdown()))</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>display(Markdown(PCA_results_23[<span class="st">'loadings'</span>].<span class="bu">round</span>(<span class="dv">3</span>).to_markdown()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="cd728207" class="cell column-body quarto-layout-panel" data-layout="[[40,60]]" data-execution_count="20">
+<div id="cd728207" class="cell column-body quarto-layout-panel" data-execution_count="20" data-layout="[[40,60]]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
 <table class="table table-sm table-striped small">
@@ -1210,7 +1211,7 @@ if (outputEl) {{
 </div>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>display(Markdown(PCA_results_22[<span class="st">'pc_values'</span>].<span class="bu">round</span>(<span class="dv">3</span>).to_markdown()))</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>display(Markdown(PCA_results_22[<span class="st">'loadings'</span>].<span class="bu">round</span>(<span class="dv">3</span>).to_markdown()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="a75378c0" class="cell column-body quarto-layout-panel" data-layout="[[40,60]]" data-execution_count="25">
+<div id="a75378c0" class="cell column-body quarto-layout-panel" data-execution_count="25" data-layout="[[40,60]]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
 <table class="table table-sm table-striped small">
@@ -1418,7 +1419,7 @@ if (outputEl) {{
 </div>
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>display(Markdown(PCA_results_21[<span class="st">'pc_values'</span>].<span class="bu">round</span>(<span class="dv">3</span>).to_markdown()))</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>display(Markdown(PCA_results_21[<span class="st">'loadings'</span>].<span class="bu">round</span>(<span class="dv">3</span>).to_markdown()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="191b4a2d" class="cell column-body quarto-layout-panel" data-layout="[[40,60]]" data-execution_count="30">
+<div id="191b4a2d" class="cell column-body quarto-layout-panel" data-execution_count="30" data-layout="[[40,60]]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
 <table class="table table-sm table-striped small">
