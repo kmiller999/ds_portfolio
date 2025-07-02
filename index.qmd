@@ -13,7 +13,7 @@ about:
       href: https://github.com/kmiller999
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/kevin-miller-375031204/
+      href: https://www.linkedin.com/in/kevin-miller-msda/
 ---
 
 ::: {#bio}
