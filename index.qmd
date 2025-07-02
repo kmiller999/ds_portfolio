@@ -1,6 +1,6 @@
 ---
 title: "Kevin Miller"
-image: Nice_headshot.jpg
+image: professional_headshot.jpeg
 about:
   id: bio
   template: trestles
@@ -23,17 +23,7 @@ I am an end-to-end Data Scientist with a versatile skill set that spans statisti
 
 My work is driven by a passion for uncovering patterns in complex data and building systems that scale. While I continue to deepen my skills in data infrastructure and engineering, I remain committed to asking and answering novel questions through advanced data mining techniques.
 
-My upcoming projects will highlight and strengthen my capabilities in:
-
--   Building advanced ETL workflows using APIs and Python scripting
-
--   Integrating disparate data sources into analyzable, well-structured formats
-
--   Designing scalable, relational database models using SQL
-
--   Engineering features from complex datasets to model nuanced constructs
-
--   Characterizing and predicting real-world decision-making behaviors
+To learn more about me or get in touch, please contact me through email or connect with me on LinkedIn.
 :::
 
 ### Programming Languages
@@ -62,7 +52,7 @@ Terminal navigation, script and batch job deployment
 
 ### Skills and Interests
 
-For sake of brevity, I only included topics I have a great deal of experience with or a project example for.
+#### Current Strengths
 
 -   [**Inferential Statistical Modeling**]{.underline}: bivariate and multivariate ANOVA and Regression (linear and logistic)
 
@@ -75,3 +65,15 @@ For sake of brevity, I only included topics I have a great deal of experience wi
 -   [**Market Basket Analysis**]{.underline}: Support, Confidence, and Lift ([Examples](https://kmiller999.github.io/ds_portfolio/projects.html#category=Market%20Basket%20Analysis))
 
 -   [**Data Visualization and Reporting**]{.underline}: Power BI and Tableau dashboards ([Examples](https://kmiller999.github.io/ds_portfolio/posts/metal_subgenre_pairings/tableau_dash.html))
+
+#### Actively Developing
+
+-   Building advanced ETL workflows using APIs and Python scripting
+
+-   Integrating disparate data sources into analyzable, well-structured formats
+
+-   Designing scalable, relational database models using SQL
+
+-   Engineering features from complex datasets to model nuanced constructs
+
+-   Characterizing and predicting real-world decision-making behaviors
