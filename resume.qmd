@@ -1,5 +1,0 @@
-<iframe
-  width="800"
-  height="800"
-  src="010125_Kevin_Miller_Resume.pdf">
-</iframe>

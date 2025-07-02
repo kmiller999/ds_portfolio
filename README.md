@@ -6,7 +6,6 @@ Welcome to my data science portfolio repository. The items in this repository ar
 
 - **[Home](https://kmiller999.github.io/ds_portfolio/)**: Read an overview of my background and interests, or get in touch. 
 - **[Projects](https://kmiller999.github.io/ds_portfolio/projects.html)**: View my data science projects, designed to showcase my skills and expertise. 
-- **[Resume](https://kmiller999.github.io/ds_portfolio/resume.html)**: View my professional resume. 
 
 ## License
 
