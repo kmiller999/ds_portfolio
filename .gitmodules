@@ -6,4 +6,4 @@
 	url = https://github.com/kmiller999/metal_subgenre_pairings
 [submodule "posts/plate_discipline"]
 	path = posts/plate_discipline
-	url = https://github.com/kmiller999/plate_discipline
+	url = https://github.com/kmiller999/plate_discipline.git
